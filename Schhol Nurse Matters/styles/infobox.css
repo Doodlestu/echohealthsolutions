@@ -1,0 +1,461 @@
+/* see media queries at end of file */
+.info-box-ctrl {
+    margin: 2px auto;
+}
+
+.header-size {
+    height: 60px;
+}
+
+.header-border-style {
+    border: 2px solid #d6d1d1;
+}
+
+.rotate {
+    transform: rotate(0eg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+}
+
+.header {
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 25px;
+    margin: 0px;
+    padding: 5px ;
+    cursor: pointer;
+    width: 90%;
+}
+
+.header-colour {
+    background-color: rgba(35, 129, 230, 0.9);
+}
+
+.header-colour-growingup {
+    background-color: rgba(255, 255, 0, .8);
+
+}
+
+.header-colour-periods {
+    background-color: rgba(255, 220, 0, .8);
+
+}
+
+.header-colour-hygiene {
+    background-color: rgba(154, 205, 50 , .8);
+
+}
+
+.header-colour-healthchecks {
+    background-color:rgba(255, 0, 0, .8) ;
+}
+
+.header-colour-minorailments {
+    background-color: rgba(204, 0, 102, .8);
+}
+
+.header-colour-transition {
+    background-color: rgba(255, 102, 225, .7);
+}
+
+.header-colour-bullying {
+    background-color: rgba(65,105,225, .7);
+}
+
+.header-colour-smoking {
+    background-color: rgba(72, 237, 43, .7);
+}
+
+.header-colour-HPV {
+    background-color: rgba(81, 2, 250, .8);
+}
+
+.header-colour-MentalHealth {
+    background: rgba(255, 102, 225, .7);
+}
+.header-colour-DomesticV {
+    background: rgba(25, 166, 156, .7);
+    
+}
+.header-colour-Behaviour{
+    background: rgba(255, 165, 0, .7);
+   
+}
+.header-colour-Bedwetting{
+    background: rgba(255, 178, 102, .7);
+   
+}
+
+.icon {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 40px;
+}
+
+.icon-img {
+    display: inline-block;
+    background: url(images/Plus_icon-01.png);
+    background-repeat: no-repeat;
+}
+
+.icon-img-width {
+    height: 40px;
+    width: 40px;
+}
+
+.icon-img-down {
+    display: inline-block;
+    background: url(images/Minus_icon-01.png);
+    background-repeat: no-repeat;
+}
+
+.header-text-width {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.header-text-font-GU {
+    font-family: '2dumbregular';
+    font-size: 1em;
+    white-space:normal;
+    text-shadow: none;
+}
+.header-text-font-P {
+    font-family: 'amadeus_regularamadeusRg';
+    font-size: 1em;
+    white-space:normal;
+    text-shadow: none;
+}
+.header-text-font-HY {
+    font-family: 'archisticonormal';
+    font-size: 1.2em;
+    white-space:normal;
+    text-shadow: none;
+}
+.header-text-font-HC {
+    font-family: 'belligerent_madnessregular';
+    font-size: 1.3em;
+    white-space:normal;
+    text-shadow: none;
+}
+
+.header-text-font-T {
+    font-family: 'fff_tusjbold';
+    font-size: 1em;
+    white-space:normal;
+    text-shadow: none;
+}
+.header-text-font-MA {
+    font-family: 'underwood_champion';
+    font-size: 1.2em;
+    white-space:normal;
+    text-shadow: none;
+}
+.header-text-font-SS {
+    font-family: 'underwood_champion';
+    font-size: 1em;
+    white-space:normal;
+    text-shadow: none;
+}
+.header-text-font-BU {
+    font-family: 'quick_end_jerkregular';
+    font-size: 1.2em;
+    white-space:normal;
+    text-shadow: none;
+}
+.header-text-font-FS {
+    font-family: 'belligerent_madnessregular';
+    font-size: 1.9em;
+    white-space:normal;
+    text-shadow: none;
+}
+.header-text-font-SDA {
+    font-family: 'capture_itregular';
+    font-size: 1.2em;
+    white-space:normal;
+    text-shadow: none;
+}
+.header-text-font-HVP {
+    font-family: 'spin_cycle_otregular';
+    font-size: 1em;
+    white-space:normal;
+    text-shadow: none;
+}
+.header-text-font-DMV {
+    font-family: 'edoregular';
+    font-size: 1.3em;
+    text-shadow: none;
+  
+}
+.header-text-font-RENTS {
+    font-family: 'anudawregular';
+    font-size: 1em;
+    text-shadow: none;
+  
+}
+.header-text-font-Bwet {
+    font-family: 'idolwildregular';
+    font-size: 1em;
+    text-shadow: none;
+  
+}
+
+
+.header-text {
+    color: black;
+}
+
+.flyout {
+    background-color: #ffffff;
+    border-left: 2px solid #d6d1d1;
+    border-right: 2px solid #d6d1d1;
+    border-bottom: 2px solid #d6d1d1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: none;
+}
+
+.flyout-margin {
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 0px; 
+}
+
+.flyout-content {
+    opacity: 0.9;
+    padding: 5px;
+}
+
+.flyout-text-font p,ol,li,strong {
+    font-family: 'Arial';
+    font-size:16px;
+}
+
+.flyout_expand {
+
+    display:block;
+}
+
+
+/* assume default smartphone 320px width... */
+/* ... and add adjustments for higher resolution below */
+
+@media only screen and (min-width: 480px) {
+  /* Styles */
+}
+@media only screen and (min-width: 600px) {
+  /* Styles */
+    .flyout-content {
+        padding: 0.5em;
+    }
+    info-box-ctrl {
+    margin: 2px auto;
+}
+
+.header-size {
+    height: 60px;
+}
+
+.header-border-style {
+    border: 2px solid #d6d1d1;
+}
+
+.rotate {
+    transform: rotate(0.8deg);
+    -webkit-transform: rotate(0.8deg);
+    -moz-transform: rotate(0.8deg);
+}
+
+.header {
+    /*height: 3.75em;*/
+    border: 3px solid black;
+    border-radius: 25px;
+    margin: 0px;
+    margin-left: 20px;
+    padding: 5px ;
+    cursor: pointer;
+    overflow: auto;
+    }
+    
+}
+@media only screen and (min-width: 768px) {
+  /* Styles */
+    info-box-ctrl {
+    margin: 2px auto;
+}
+
+.header-size {
+    height: 60px;
+}
+
+.header-border-style {
+    border: 2px solid #d6d1d1;
+}
+
+.rotate {
+    transform: rotate(0.8deg);
+    -webkit-transform: rotate(0.8deg);
+    -moz-transform: rotate(0.8deg);
+}
+
+.header {
+    /*height: 3.75em;*/
+    border: 3px solid black;
+    border-radius: 25px;
+    margin: 0px;
+    margin-left: 25px;
+    padding: 5px ;
+    cursor: pointer;
+    overflow: auto;
+}
+
+.icon {
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 40px;
+}
+
+.icon-img {
+    display: inline-block;
+    background: url(images/Plus_icon-01.png);
+    background-repeat: no-repeat;
+}
+
+.icon-img-width {
+    height: 40px;
+    width: 40px;
+}
+
+.icon-img-down {
+    display: inline-block;
+    background: url(images/Minus_icon-01.png);
+    background-repeat: no-repeat;
+}
+
+.header-text-width {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.header-text-font-GU {
+    
+    font-size: 1.5em;
+    
+}
+.header-text-font-P {
+    
+    font-size: 1.3em;
+    
+}
+.header-text-font-HY {
+    
+    font-size: 1.5em;
+    
+}
+.header-text-font-HC {
+    
+    font-size: 1.8em;
+    
+}
+.header-text-font-T {
+    
+    font-size: 1.6em;
+    
+}
+.header-text-font-MA {
+    
+    font-size: 1.9em;
+    
+}
+.header-text-font-BU {
+    
+    font-size: 1.9em;
+   
+}
+.header-text-font-FS {
+   
+    font-size: 1.9em;
+   
+}
+.header-text-font-SDA {
+    
+    font-size: 1.9em;
+   
+}
+.header-text-font-HVP {
+    
+    font-size: 1.3em;
+   
+}
+.header-text-font-SS {
+   
+    font-size: 1.3em;
+    
+}
+   .header-text-font-DMV {
+    font-size: 1.3em;
+    
+}
+.header-text-font-RENTS {
+    font-size: 2em;
+   
+  
+}
+.header-text-font-Bwet {
+    font-size: 2em;
+    
+  
+}
+
+.header-text {
+    color: black;
+}
+
+.flyout {
+    background-color: #ffffff;
+    border-left: 2px solid #d6d1d1;
+    border-right: 2px solid #d6d1d1;
+    border-bottom: 2px solid #d6d1d1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+}
+
+.flyout-margin {
+    margin-left: 18px;
+    margin-right: 30px;
+}
+
+.flyout-content {
+    opacity: 0.9;
+    padding: 0.25em;
+    overflow:auto;
+}
+
+.flyout-text-font p,ol,li,strong {
+    font-family: 'Arial';
+    font-size:16px;
+}
+
+.flyout_expand {
+
+    display:block;
+}
+
+}
+@media only screen and (min-width: 992px) {
+  /* Styles */
+    .flyout-content {
+        padding: 0.75em;
+    }
+}
+@media only screen and (min-width: 1382px) {
+  /* Styles */
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}

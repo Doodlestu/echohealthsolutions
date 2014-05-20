@@ -1,0 +1,2261 @@
+/* see media queries at end of file */
+
+html{
+ height:100%;
+ min-height:100%;
+ }
+body{
+ min-height:100%;
+ }
+
+.ui-footer
+{
+    text-align: center;
+    padding: 0.3em;
+}
+
+.ui-footer > .footerText
+{
+    font-size: 0.8em;
+    position: relative;
+    top: -2px;
+}
+
+/*.ui-icon-plus {
+    padding: 70px;
+}
+
+.ui-icon-minus {
+    padding-right: 10px;
+}*/
+
+.ui-btn {
+    font-size: 0.7em;
+    background: rgba(255, 255, 255, .5);
+    font-family: 'belligerent_madnessregular';
+    padding:5px 5px;
+    white-space: normal;
+}
+
+.ui-btn-text
+{
+    white-space: normal;
+}
+
+.ui-btn-icon-notext {
+    border: none;
+    width:1px;
+    height:1px;
+}
+
+.err
+{
+    color: red;
+    font-weight: bold
+}
+
+.buttons
+{
+    text-align: center;
+}
+
+.left
+{
+    float: left;
+    display: inline-block;
+}
+
+img.width100 {
+
+    width:100%;
+}
+
+img.width30 {
+
+    width:30%;
+}
+
+img.width70 {
+
+    width:70%;
+}
+
+img.left
+{
+    padding-right: 0.4em;
+}
+
+.right
+{
+    float: right;
+    display: inline-block;
+}
+
+img.right
+{
+    padding-left: 0.4em;
+}
+
+.clear
+{
+    clear: both;
+}
+
+#linkImage
+{
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+.ui-btn
+{   
+    padding: .4em .4em;
+    
+}
+
+.justbox{
+   background-color: #ffffff;
+    border-left: 2px solid #d6d1d1;
+    border-right: 2px solid #d6d1d1;
+    border-bottom: 2px solid #d6d1d1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    Padding: 3px;
+    margin: 6px;
+}
+.tbarBackBtn
+{
+    height: 42px;
+    width: 44px;
+    background-image: url(../styles/images/Back-01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    /*opacity:0.2;*/
+    background-color: transparent;
+}
+
+.pageheader
+{
+    height: 50px;
+    background-image: url(../styles/images/SNM_logo-01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.tbarHomeBtn
+{
+    height: 46px;
+    width: 44px;
+    background-image: url(../styles/images/home-01.png); 
+    /*background-color:#facc0f  ;*/
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 10px;
+    float: right;
+    background-color: transparent;
+    
+}
+
+/*.ui-icon-young-people {
+background-image:url("Icons_Young People.png");
+background-size: 19px 26px;
+}*/
+
+/* MAP STYLES*/
+#page-location-content
+{
+    position: absolute;
+    top: 42px;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+
+#page-location-content .ui-input-search,
+#page-location-content div.ui-input-text
+{
+    margin: 0 10px;
+    padding: 0;
+    background-image: none;
+    position: relative;
+    border: none;
+}
+
+#map-canvas
+{
+    width: 100%;
+    height: 100%;
+}
+
+#map-search-wrap
+{
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#map-address
+{
+    min-width: 200px;
+    width: 60%;
+    margin: 5px;
+    float: left;
+    background-color: #fff;
+    font-style: italic;
+    color: #000;
+    padding: 7px 10px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(180, 180, 180);
+    border-bottom-color: rgb(255, 255, 255);
+    box-shadow: 0 -1px 0 #3C3C3C;
+}
+
+#map-search
+{
+    float: left;
+    width: 41px;
+    height: 41px;
+    color: #fff;
+    border: none;
+    background: none;
+    background-image: url(../styles/images/search.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 4px;
+}
+
+#map-search:active
+{
+    background-image: url(../styles/images/search_active.png);
+    background-repeat: no-repeat;
+}
+
+#map-navigate-home
+{
+    float: left;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    background: none;
+    background-image: url(../styles/images/location.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 4px;
+}
+
+#map-navigate-home:active
+{
+    background-image: url(../styles/images/location_active.png);
+    background-repeat: no-repeat;
+}
+
+
+@font-face {
+    font-family: '2dumbregular';
+    src: url('Fonts/2Dumb-webfont.eot');
+    src: url('Fonts/2Dumb-webfont.eot?#iefix') format('embedded-opentype'),
+    url('Fonts/2Dumb-webfont.woff') format('woff'),
+    url('Fonts/2Dumb-webfont.ttf') format('truetype'),
+    url('Fonts/2Dumb-webfont.svg#2dumbregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: '3dumbregular';
+    src: url('Fonts/3Dumb-webfont.eot');
+    src: url('Fonts/3Dumb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/3Dumb-webfont.woff') format('woff'),
+         url('Fonts/3Dumb-webfont.ttf') format('truetype'),
+         url('Fonts/3Dumb-webfont.svg#3dumbregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'anudawregular';
+    src: url('Fonts/ANUDRG__-webfont.eot');
+    src: url('Fonts/ANUDRG__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/ANUDRG__-webfont.woff') format('woff'),
+         url('Fonts/ANUDRG__-webfont.ttf') format('truetype'),
+         url('Fonts/ANUDRG__-webfont.svg#anudawregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aldoregular';
+    src: url('Fonts/Aldo_Open-webfont.eot');
+    src: url('Fonts/Aldo_Open-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/Aldo_Open-webfont.woff') format('woff'),
+         url('Fonts/Aldo_Open-webfont.ttf') format('truetype'),
+         url('Fonts/Aldo_Open-webfont.svg#aldoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'amadeus_regularamadeusRg';
+    src: url('Fonts/Amadeus-webfont.eot');
+    src: url('Fonts/Amadeus-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/Amadeus-webfont.woff') format('woff'),
+         url('Fonts/Amadeus-webfont.ttf') format('truetype'),
+         url('Fonts/Amadeus-webfont.svg#amadeus_regularamadeusRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'anagramregular';
+    src: url('Fonts/Anagram-webfont.eot');
+    src: url('Fonts/Anagram-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/Anagram-webfont.woff') format('woff'),
+         url('Fonts/Anagram-webfont.ttf') format('truetype'),
+         url('Fonts/Anagram-webfont.svg#anagramregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'archisticonormal';
+    src: url('Fonts/Archistico_Simple-webfont.eot');
+    src: url('Fonts/Archistico_Simple-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/Archistico_Simple-webfont.woff') format('woff'),
+         url('Fonts/Archistico_Simple-webfont.ttf') format('truetype'),
+         url('Fonts/Archistico_Simple-webfont.svg#archisticonormal') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'belligerent_madnessregular';
+    src: url('Fonts/belligerent-webfont.eot');
+    src: url('Fonts/belligerent-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/belligerent-webfont.woff') format('woff'),
+         url('Fonts/belligerent-webfont.ttf') format('truetype'),
+         url('Fonts/belligerent-webfont.svg#belligerent_madnessregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'comic_zine_otregular';
+    src: url('Fonts/comic_zine_ot-webfont.eot');
+    src: url('Fonts/comic_zine_ot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/comic_zine_ot-webfont.woff') format('woff'),
+         url('Fonts/comic_zine_ot-webfont.ttf') format('truetype'),
+         url('Fonts/comic_zine_ot-webfont.svg#comic_zine_otregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'District';
+    src: url('Fonts/District-webfont.eot');
+    src: url('Fonts/District-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/District-webfont.woff') format('woff'),
+         url('Fonts/District-webfont.ttf') format('truetype'),
+         url('Fonts/District-webfont.svg#District') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'fearlessregular';
+    src: url('Fonts/fearless-webfont.eot');
+    src: url('Fonts/fearless-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/fearless-webfont.woff') format('woff'),
+         url('Fonts/fearless-webfont.ttf') format('truetype'),
+         url('Fonts/fearless-webfont.svg#fearlessregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'fff_tusjbold';
+    src: url('Fonts/FFF_Tusj-webfont.eot');
+    src: url('Fonts/FFF_Tusj-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/FFF_Tusj-webfont.woff') format('woff'),
+         url('Fonts/FFF_Tusj-webfont.ttf') format('truetype'),
+         url('Fonts/FFF_Tusj-webfont.svg#fff_tusjbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'idolwildregular';
+    src: url('Fonts/idolwild-webfont.eot');
+    src: url('Fonts/idolwild-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/idolwild-webfont.woff') format('woff'),
+         url('Fonts/idolwild-webfont.ttf') format('truetype'),
+         url('Fonts/idolwild-webfont.svg#idolwildregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'underwood_champion';
+    src: url('Fonts/underwood_champion-webfont.eot');
+    src: url('Fonts/underwood_champion-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/underwood_champion-webfont.woff') format('woff'),
+         url('Fonts/underwood_champion-webfont.ttf') format('truetype'),
+         url('Fonts/underwood_champion-webfont.svg#underwood_champion') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'quick_end_jerkregular';
+    src: url('Fonts/quick_end_jerk-webfont.eot');
+    src: url('Fonts/quick_end_jerk-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/quick_end_jerk-webfont.woff') format('woff'),
+         url('Fonts/quick_end_jerk-webfont.ttf') format('truetype'),
+         url('Fonts/quick_end_jerk-webfont.svg#quick_end_jerkregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'spin_cycle_otregular';
+    src: url('Fonts/spincycle_ot-webfont.eot');
+    src: url('Fonts/spincycle_ot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/spincycle_ot-webfont.woff') format('woff'),
+         url('Fonts/spincycle_ot-webfont.ttf') format('truetype'),
+         url('Fonts/spincycle_ot-webfont.svg#spin_cycle_otregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'capture_itregular';
+    src: url('Fonts/Capture_it-webfont.eot');
+    src: url('Fonts/Capture_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/Capture_it-webfont.woff') format('woff'),
+         url('Fonts/Capture_it-webfont.ttf') format('truetype'),
+         url('Fonts/Capture_it-webfont.svg#capture_itregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'edoregular';
+    src: url('Fonts/edo-webfont.eot');
+    src: url('Fonts/edo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/edo-webfont.woff') format('woff'),
+         url('Fonts/edo-webfont.ttf') format('truetype'),
+         url('Fonts/edo-webfont.svg#edoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+ 
+
+/*.samplediv {
+
+border:2px solid red;
+border-radius:15px;
+height:60px;
+-webkit-transform: rotate(3deg);
+}*/
+/*.wrap {
+width: 100%;
+padding-top: 10px;
+text-align: center; 
+border-style:solid;
+border-color:red;
+}*/
+
+.YPdiv
+{
+    font-family: '3dumbregular';
+    text-decoration: none;
+    padding: 4px 4px;
+    background: rgba(255, 255, 0, .8);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    text-shadow: none;
+    color: #000000;
+    font-size: 1.3em;
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.Parentsdiv
+{
+    font-family: 'anudawregular';
+    text-decoration: none;
+    padding: 10px 4px;
+    background: rgba(255, 165, 0, .8);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    color: #000000;
+    font-size: 1.2em;
+    text-shadow: none;
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.SNInfodiv
+{
+    font-family: 'amadeus_regularamadeusRg';
+    text-decoration: none;
+    padding: 10px 4px;
+    background: rgba(255, 220, 0, .8);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    color: #000000;
+    font-size: 1em;
+    text-shadow: none; 
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.Localdiv
+{
+    font-family: 'archisticonormal';
+    text-decoration: none;
+    padding: 10px 4px;
+    background: rgba(154, 205, 50, .8);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    color: #000000;
+    font-size: 1.2em;
+    text-shadow: none ;
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2eg);
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.Eventsdiv
+{
+    font-family: 'belligerent_madnessregular';
+    text-decoration: none;
+    padding: 7px 4px;
+    background: rgba(255, 0, 0, .7);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    color: #000000;
+    font-size: 1.5em;
+    text-shadow: none;
+    vertical-align: middle;
+    -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.DomesticViolenceDiv
+{
+    font-family:'edoregular';
+    text-decoration: none;
+    padding: 10px 4px;
+    background: rgba(25, 166, 156, .7);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    color: #000000;
+    font-size: 1.3em;
+    text-shadow: none;
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.Settingsdiv
+{
+    text-decoration: none !Important;
+    padding: 10px  30px;
+    background: rgba(247, 217, 43, .5);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3.5px;
+    border-color: black; 
+    color: #000000;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Sylfaen';
+    vertical-align: middle;
+    -webkit-transform: rotate(-1.0deg); 
+    -moz-transform: rotate(-1.0deg);
+    display: block;
+    width: 75%;
+    height: 60px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    /*font-family: MyFirstFont;
+    text-decoration: none ;
+    padding: 10px 30px;
+    background: rgba(255, 0, 0, .7);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    color: #000000;
+    font-size: 2em;
+    font-family: 'Buxton Sketch';
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    display: block;*/
+
+}
+
+.Year9t013div 
+{
+    font-family: 'fearlessregular';
+    text-decoration: none;
+    padding: 10px 4px;
+    background: rgba(65, 105, 225, .7);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    color: #000000;
+    font-size: 1.5em;
+    text-shadow: none;
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.TransitionDiv 
+{
+    font-family: 'fff_tusjbold';
+    text-decoration: none;
+    padding: 10px 4px;
+    background: rgba(255, 102, 225, .7);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    color: #000000;
+    font-size: 1.3em;
+    text-shadow: none;;
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.BedwettingDiv 
+{
+    font-family:'idolwildregular';
+    text-decoration: none;
+    padding: 10px 4px;
+    background: rgba(255, 178, 102, .9);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    color: #000000;
+    font-size: 1.3em;
+    text-shadow: none;
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.MinorAilmentsDiv
+{
+    font-family: 'underwood_champion';
+    text-decoration: none;
+    padding: 10px 4px;
+    background: rgba(204, 0, 102, .7);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    color: #000000;
+    font-size: 1.3em;
+    text-shadow: none;
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.BullyingDiv 
+{
+    font-family: 'quick_end_jerkregular';
+    text-decoration: none;
+    padding: 10px 4px;
+    background: rgba(65, 105, 225, .7);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    color: #000000;
+    font-size: 2em;
+    text-shadow: none;
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.SmokingDiv
+{
+    font-family: 'capture_itregular';
+    text-decoration: none;
+    padding: 10px 4px;
+    background: rgba(72, 237, 43, .7);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    color: #000000;
+    font-size: 1.3em;
+    text-shadow: none;
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.HPVDiv 
+{
+    font-family: 'spin_cycle_otregular';
+    text-decoration: none;
+    padding: 10px 4px;
+    background: rgba(81, 2, 250, .8);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    color: #000000;
+    font-size: 1.3em;
+    text-shadow: none;
+    font-weight: bold;
+    vertical-align: middle;
+    -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.FooterIconsDiv
+{
+
+    /*border:10px solid blue;*/
+    padding-right: 40px;
+    padding-top: 30px;
+    height: 100px;
+}
+
+.FaceboookDiv, .TwitterDiv, .SetDiv
+{
+    background-color: transparent;
+    float: right;
+    padding: 7px 7px 7px 7px;
+    /*padding-top:50px;*/
+    /*padding-right:50px;*/
+    /*border: 5px solid red;*/
+    /*margin-top:40px;
+    margin-right:40px;*/
+}
+
+.imagealign
+{
+    
+    vertical-align: middle;
+}
+
+.yptitle
+{   font-family: '3dumbregular';
+    text-decoration: none;
+    text-align: center !important;
+    Text-shadow: 2px 2px 8px #ffff00;
+    font-size: 1.5em;
+    
+}
+.Y6title
+{   font-family:  'archisticonormal';
+    text-decoration: none;
+    text-align: center !important;
+    Text-shadow: 2px 2px 8px #9acd32;
+    font-size: 2em;
+    
+}
+.Y7title
+{   font-family:  'anudawregular';
+    text-decoration: none;
+    text-align: center !important;
+    Text-shadow: 2px 2px 12px #e1a500;
+    font-size: 1.5em;
+    
+}
+.Y8title
+{   font-family:  'amadeus_regularamadeusRg';
+    text-decoration: none;
+    text-align: center !important;
+    Text-shadow: 2px 2px 12px #e1dc00;
+    font-size: 2em;
+    
+}
+.Y913title
+{   font-family:  'fearlessregular';
+    text-decoration: none;
+    text-align: center !important;
+    Text-shadow: 2px 2px 12px #4169e1;
+    font-size: 2em;
+    
+}
+.Events{
+    font-family:  'belligerent_madnessregular';
+    text-decoration: none;
+    text-align: center !important;
+    Text-shadow: 2px 2px 12px #e10000;
+    font-size: 2.5em;
+   
+}
+.Trans{
+    font-family:  'fff_tusjbold';
+    text-decoration: none;
+    text-align: center !important;
+    Text-shadow: 2px 2px 12px #e166e1;
+    font-size: 1.3em;
+   
+}
+.BedW{
+    font-family:  'idolwildregular';
+    text-decoration: none;
+    text-align: center !important;
+    Text-shadow: 2px 2px 12px #e1b266;
+    font-size: 2.6em;
+   
+}
+.MinorA{
+    font-family:  'underwood_champion';
+    text-decoration: none;
+    text-align: center !important;
+    Text-shadow: 2px 2px 12px #cc0066;
+    font-size: 2em;
+   
+}
+.Bully{
+    font-family:  'quick_end_jerkregular';
+    text-decoration: none;
+    text-align: center !important;
+    Text-shadow: 2px 2px 12px #4169e1;
+    font-size: 2.6em;
+   
+}
+.MenatlH{
+    font-family:  'quick_end_jerkregular';
+    text-decoration: none;
+    text-align: center !important;
+    Text-shadow: 2px 2px 12px #4169e1;
+    font-size: 2.6em;
+   
+}
+.SmokeDA{
+    font-family:  'capture_itregular';
+    text-decoration: none;
+    text-align: center !important;
+    Text-shadow: 2px 2px 12px #48ed2b;
+    font-size: 2em;
+   
+}
+.HPV{
+    font-family:  'spin_cycle_otregular';
+    text-decoration: none;
+    text-align: center !important;
+    Text-shadow: 2px 2px 12px #5102fa;
+    font-size: 2em;
+   
+}
+.DomesticV{
+    font-family:'edoregular';
+    text-align: center !important;
+    Text-shadow: 2px 2px 12px #19a69c;
+    font-size: 2em;
+    margin-top: 5px;
+}
+.pinkbox
+{
+    background-color: #FF99FF;
+    color: white;
+    margin: 15px auto;
+    padding: 10px;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.brightpinkBackground
+{
+    background-color: #FA02F2;
+}
+
+a:link { color: #000000; }    /* unvisited link */
+a:visited { color: #000000; } /* visited link */
+a:hover { color: #000000; }   /* mouse over link */
+a:active { color: #000000; }
+
+p
+{
+
+    font-size: 16px;
+    
+}
+
+a.link
+{
+
+    display: block;
+    text-decoration: none;
+    color: #000000 !Important;
+    
+}
+
+
+
+
+#blankbutton
+{
+    text-decoration: none !Important;
+    padding: 10px  4px;
+    background: rgba(255, 255, 0, .5);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black; 
+    color: #000000;
+    font-size: 2.4em;
+    font-family: 'belligerent_madnessregular';
+    text-shadow: none;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-transform: rotate(3deg); 
+    -moz-transform: rotate(3deg);
+    display: block;
+    width: 90%;
+    margin: 0 auto; 
+    margin-top: -10px;
+}
+
+#musicbutton
+{
+    text-decoration: none !Important;
+    padding: 10px  4px;
+    background: rgba(211, 79, 29, .5);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black; 
+    color: #000000;
+    font-size: 2.4em;
+    font-family: 'belligerent_madnessregular';
+    text-shadow: none;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transform: rotate(-2deg); 
+    -moz-transform: rotate(-2deg);
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -40px;
+}
+
+#fashionbutton
+{
+    text-decoration: none !Important;
+    padding: 10px  4px;
+    background: rgba(250, 2, 242, .5);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2.4px;
+    border-color: black; 
+    color: #000000;
+    font-size: 2.4em;
+    font-family: 'belligerent_madnessregular';
+    text-shadow: none;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transform: rotate(3deg); 
+    -moz-transform: rotate(3deg);
+    display: block;
+    width: 90%; 
+    margin: 0 auto;
+    margin-top: -40px;
+    
+}
+#spacebutton
+{
+    text-decoration: none !Important;
+    padding: 10px  4px;
+    background: rgba(255, 0, 0, .5);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black; 
+    color: #000000;
+    font-size: 2.4em;
+    font-family: 'belligerent_madnessregular';
+    text-shadow: none;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transform: rotate(-3deg); 
+    -moz-transform: rotate(-3deg);
+    display: block;
+    width: 90%; 
+    margin: 0 auto;
+    margin-top: -40px;
+    
+}
+#inkbutton
+{
+    text-decoration: none !Important;
+    padding: 10px  4px;
+    background: rgba(144, 144, 144, .5);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black; 
+    color: #000000;
+    font-size: 2.4em;
+    font-family: 'belligerent_madnessregular';
+    text-shadow: none;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transform: rotate(3deg); 
+    -moz-transform: rotate(3deg);
+    display: block;
+    width: 90%; 
+    margin: 0 auto;
+    margin-top: -40px;
+}
+#tpinkbutton
+{
+    text-decoration: none !Important;
+    padding: 10px  4px;
+    background: rgba(212, 69, 140, .5);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black; 
+    color: #000000;
+    font-size: 2.4em;
+    font-family: 'belligerent_madnessregular';
+    text-shadow: none;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transform: rotate(-3deg); 
+    -moz-transform: rotate(-3deg);
+    display: block;
+    width: 90%; 
+    margin: 0 auto;
+    margin-top: -40px;
+}
+
+#internet-safety-popup
+{
+    width: 250px;
+    background-color: #fff;
+}
+
+ol.a { list-style-type: upper-alpha; }
+
+ul.a {
+        list-style-type: circle;
+    }
+
+.computerDiv
+{
+    
+
+    /*border:10px solid blue;*/
+    padding-right: 10px;
+    padding-bottom: 15px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black; 
+    float:left;
+    background: rgba(250, 2, 242, 1);
+    width: 8%;
+    background-image: url(images/Icon_InternetSafety.png);
+    width: 30px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imagealign-ypy6{
+    width: 5%;
+}
+    
+.imagealign-ypy7{
+    width: 6%;
+}
+ .imagealign-ypy8{
+    width: 7%;
+}
+    
+.imagealign-ypy913{
+    width: 8%;
+}
+
+.custom-collapsible {
+    margin-left: 3px !important;
+    border-width: 10px !important;
+    border-color: #FA02F2 !important;
+    background-color: blue !important;
+       
+}
+
+
+    
+
+/* assume default smartphone 320px width... */
+/* ... and add adjustments for higher resolution below */
+
+@media only screen and (min-width: 480px) {
+  /* Styles */
+    img.left
+    {
+        padding-right: 0.6em;
+    }
+    img.right
+    {
+        padding-left: 0.6em;
+    }
+    .MinorA{
+        font-size: 1em;
+    }
+}
+@media only screen and (min-width: 600px) {
+  /* Styles */
+    .ui-btn {
+    font-size: 0.9em;
+        }
+    img.left
+    {
+        padding-right: 1em;
+    }
+    img.right
+    {
+        padding-left: 1em;
+    }
+    .YPdiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 30px;
+	}
+
+.Parentsdiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.SNInfodiv
+	{
+    padding: 10px 30px;
+    font-size: 2em; 
+    width: 75%;
+    margin-top: 30px;
+	}
+
+.Localdiv
+	{
+    padding: 10px 30px;
+    font-size: 1.5em;
+    width: 75%;
+    margin-top: 30px;
+	}
+
+.Eventsdiv
+	{
+    
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+	}
+
+.DomesticViolenceDiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+	}
+
+.Settingsdiv
+	{
+    
+    padding: 10px  30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+    
+	}
+
+.Year9t013div 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+	}
+
+.TransitionDiv 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.BedwettingDiv 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.MinorAilmentsDiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.BullyingDiv 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.SmokingDiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+	}
+
+.HPVDiv 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.FooterIconsDiv
+{
+
+    /*border:10px solid blue;*/
+    padding-right: 40px;
+    padding-top: 30px;
+    height: 100px;
+}
+
+.FaceboookDiv, .TwitterDiv, .SetDiv
+{
+    background-color: transparent;
+    float: right;
+    padding: 7px 7px 7px 7px;
+    /*padding-top:50px;*/
+    /*padding-right:50px;*/
+    /*border: 5px solid red;*/
+    /*margin-top:40px;
+    margin-right:40px;*/
+}
+
+.imagealign
+{
+    
+    vertical-align: middle;
+}
+
+.yptitle
+{   
+    font-size: 3.3em;
+    
+}
+.Y6title
+{   
+    font-size: 3.3em;
+    
+}
+.Y7title
+{   
+    font-size: 3em;
+    
+}
+.Y8title
+{  
+    font-size: 3em;
+    
+}
+.Y913title
+{   
+    font-size: 3.3em;
+    
+}
+.Events{
+    
+    font-size: 3.3em;
+   
+}
+.Trans{
+    font-size: 2.6em;
+   
+}
+.BedW{
+    font-size: 2.6em;
+   
+}
+.MinorA{
+    font-size: 2.5em;
+   
+}
+.Bully{
+    font-size: 2.6em;
+   
+}
+.MenatlH{
+    font-size: 2.6em;
+   
+}
+.SmokeDA{
+    font-size: 2.6em;
+   
+}
+.HPV{
+     font-size: 2.6em;
+   
+}
+
+
+
+
+#blankbutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%;
+    margin: 0 auto; 
+}
+
+#musicbutton
+    {
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%; 
+    margin: 0 auto; 
+    }
+
+#fashionbutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%; 
+    margin: 0 auto; 
+}
+#spacebutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%;
+    margin: 0 auto; 
+}
+#inkbutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%;
+    margin: 0 auto; 
+}
+#tpinkbutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%;
+    margin: 0 auto; 
+}
+
+#internet-safety-popup
+{
+    width: 250px;
+    background-color: #fff;
+}
+
+ol.a { list-style-type: upper-alpha; }
+
+ul.a {
+        list-style-type: circle;
+    }
+
+table,th,td
+{
+border:1px solid black;
+}
+
+table {
+    width:80%;
+    
+}
+
+td
+{
+padding:5px;
+}
+.computerDiv
+{
+    /*border:10px solid blue;*/
+    padding-right: 10px;
+    padding-bottom: 15px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black; 
+    float:left;
+    background: rgba(250, 2, 242, 1);
+    width: 8%;
+    background-image: url(images/Icon_InternetSafety.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imagealign-ypy6{
+    width: 5%;
+}
+    
+.imagealign-ypy7{
+    width: 6%;
+}
+ .imagealign-ypy8{
+    width: 7%;
+}
+    
+.imagealign-ypy913{
+    width: 8%;
+}
+}
+@media only screen and (min-width: 992px) {
+  /* Styles */
+    img.left
+    {
+        padding-right: 2em;
+    }
+    img.right
+    {
+        padding-left: 2em;
+    
+	}
+    .YPdiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 30px;
+	}
+
+.Parentsdiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.SNInfodiv
+	{
+    padding: 10px 30px;
+    font-size: 2em; 
+    width: 75%;
+    margin-top: 30px;
+	}
+
+.Localdiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 30px;
+	}
+
+.Eventsdiv
+	{
+    
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+	}
+
+.DomesticViolenceDiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+	}
+
+.Settingsdiv
+	{
+    
+    padding: 10px  30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+    
+	}
+
+.Year9t013div 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+	}
+
+.TransitionDiv 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.BedwettingDiv 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.MinorAilmentsDiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.BullyingDiv 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.SmokingDiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+	}
+
+.HPVDiv 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.FooterIconsDiv
+{
+
+    /*border:10px solid blue;*/
+    padding-right: 40px;
+    padding-top: 30px;
+    height: 100px;
+}
+
+.FaceboookDiv, .TwitterDiv, .SetDiv
+{
+    background-color: transparent;
+    float: right;
+    padding: 7px 7px 7px 7px;
+    /*padding-top:50px;*/
+    /*padding-right:50px;*/
+    /*border: 5px solid red;*/
+    /*margin-top:40px;
+    margin-right:40px;*/
+}
+
+.imagealign
+{
+    
+    vertical-align: middle;
+}
+
+.yptitle
+{   
+    font-size: 3.3em;
+    
+}
+.Y6title
+{   
+    font-size: 3.3em;
+    
+}
+.Y7title
+{   
+    font-size: 3em;
+    
+}
+.Y8title
+{  
+    font-size: 3em;
+    
+}
+.Y913title
+{   
+    font-size: 3.3em;
+    
+}
+.Events{
+    
+    font-size: 3.3em;
+   
+}
+.Trans{
+    font-size: 2.6em;
+   
+}
+.BedW{
+    font-size: 2.6em;
+   
+}
+.MinorA{
+    font-size: 2.5em;
+   
+}
+.Bully{
+    font-size: 2.6em;
+   
+}
+.MenatlH{
+    font-size: 2.6em;
+   
+}
+.SmokeDA{
+    font-size: 2.6em;
+   
+}
+.HPV{
+     font-size: 2.6em;
+   
+}
+.DomesticV{
+    font-size: 2.6em;
+   
+}
+
+
+
+#blankbutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%;
+    margin: 0 auto; 
+}
+
+#musicbutton
+    {
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%; 
+    margin: 0 auto; 
+    }
+
+#fashionbutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%; 
+    margin: 0 auto; 
+}
+#spacebutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%;
+    margin: 0 auto; 
+}
+#inkbutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%;
+    margin: 0 auto; 
+}
+#tpinkbutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%;
+    margin: 0 auto; 
+}
+
+#internet-safety-popup
+{
+    width: 250px;
+    background-color: #fff;
+}
+
+ol.a { list-style-type: upper-alpha; }
+
+ul.a {
+        list-style-type: circle;
+    }
+
+table,th,td
+{
+border:1px solid black;
+}
+
+table {
+    width:80%;
+    
+}
+
+td
+{
+padding:5px;
+}
+.computerDiv
+{
+    /*border:10px solid blue;*/
+    padding-right: 10px;
+    padding-bottom: 15px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black; 
+    float:left;
+    background: rgba(250, 2, 242, 1);
+    width: 8%;
+    background-image: url(images/Icon_InternetSafety.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imagealign-ypy6{
+    width: 5%;
+}
+    
+.imagealign-ypy7{
+    width: 6%;
+}
+ .imagealign-ypy8{
+    width: 7%;
+}
+    
+.imagealign-ypy913{
+    width: 8%;
+}
+}
+@media only screen and (min-width: 992px) {
+  /* Styles */
+    img.left
+    {
+        padding-right: 2em;
+    }
+    img.right
+    {
+        padding-left: 2em;
+    
+	}
+    
+
+    .computerDiv
+{
+    /*border:10px solid blue;*/
+    padding-right: 10px;
+    padding-bottom: 15px;
+    height: 30px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black; 
+    float:left;
+    background: rgba(250, 2, 242, 1);
+    width: 8%;
+    background-image: url(images/Icon_InternetSafety.png);
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+}
+@media only screen and (min-width: 768px) {
+  /* Styles */
+    .ui-btn
+    {
+        padding: .7em .7em;
+    }
+
+ .YPdiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 30px;
+	}
+
+.Parentsdiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.SNInfodiv
+	{
+    padding: 10px 30px;
+    font-size: 2em; 
+    width: 75%;
+    margin-top: 30px;
+	}
+
+.Localdiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 30px;
+	}
+
+.Eventsdiv
+	{
+    
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+	}
+
+.DomesticViolenceDiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+	}
+
+.Settingsdiv
+	{
+    
+    padding: 10px  30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+    
+	}
+
+.Year9t013div 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+	}
+
+.TransitionDiv 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.BedwettingDiv 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.MinorAilmentsDiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.BullyingDiv 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.SmokingDiv
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 40px;
+	}
+
+.HPVDiv 
+	{
+    padding: 10px 30px;
+    font-size: 2em;
+    width: 75%;
+    margin-top: 20px;
+	}
+
+.FooterIconsDiv
+{
+
+    /*border:10px solid blue;*/
+    padding-right: 40px;
+    padding-top: 30px;
+    height: 100px;
+}
+
+.FaceboookDiv, .TwitterDiv, .SetDiv
+{
+    background-color: transparent;
+    float: right;
+    padding: 7px 7px 7px 7px;
+    /*padding-top:50px;*/
+    /*padding-right:50px;*/
+    /*border: 5px solid red;*/
+    /*margin-top:40px;
+    margin-right:40px;*/
+}
+
+.imagealign
+{
+    
+    vertical-align: middle;
+}
+
+.yptitle
+{   
+    font-size: 3.3em;
+    
+}
+.Y6title
+{   
+    font-size: 3.3em;
+    
+}
+.Y7title
+{   
+    font-size: 3em;
+    
+}
+.Y8title
+{  
+    font-size: 3em;
+    
+}
+.Y913title
+{   
+    font-size: 3.3em;
+    
+}
+.Events{
+    
+    font-size: 3.3em;
+   
+}
+.Trans{
+    font-size: 2.6em;
+   
+}
+.BedW{
+    font-size: 2.6em;
+   
+}
+.MinorA{
+    font-size: 2.5em;
+   
+}
+.Bully{
+    font-size: 2.6em;
+   
+}
+.MenatlH{
+    font-size: 2.6em;
+   
+}
+.SmokeDA{
+    font-size: 2.6em;
+   
+}
+.HPV{
+     font-size: 2.6em;
+   
+}
+.DomesticV{
+    font-size: 2.6em;
+   
+}
+
+
+
+#blankbutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%;
+    margin: 0 auto; 
+}
+
+#musicbutton
+    {
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%; 
+    margin: 0 auto; 
+    }
+
+#fashionbutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%; 
+    margin: 0 auto; 
+}
+#spacebutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%;
+    margin: 0 auto; 
+}
+#inkbutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%;
+    margin: 0 auto; 
+}
+#tpinkbutton
+{
+    padding: 10px  30px;
+    font-size: 3em;
+    width: 75%;
+    margin: 0 auto; 
+}
+
+#internet-safety-popup
+{
+    width: 250px;
+    background-color: #fff;
+}
+
+ol.a { list-style-type: upper-alpha; }
+
+ul.a {
+        list-style-type: circle;
+    }
+
+table,th,td
+{
+border:1px solid black;
+}
+
+table {
+    width:80%;
+    
+}
+
+td
+{
+padding:5px;
+}
+.computerDiv
+{
+    /*border:10px solid blue;*/
+    padding-right: 10px;
+    padding-bottom: 15px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black; 
+    float:left;
+    background: rgba(250, 2, 242, 1);
+    width: 8%;
+    background-image: url(images/Icon_InternetSafety.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.imagealign-ypy6{
+    width: 5%;
+}
+    
+.imagealign-ypy7{
+    width: 6%;
+}
+ .imagealign-ypy8{
+    width: 7%;
+}
+    
+.imagealign-ypy913{
+    width: 8%;
+}
+}
+@media only screen and (min-width: 992px) {
+  /* Styles */
+    img.left
+    {
+        padding-right: 2em;
+    }
+    img.right
+    {
+        padding-left: 2em;
+    
+	}
+    
+}
+@media only screen and (min-width: 1382px) {
+  
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+    #map-search
+    {
+        background-image: url(../styles/images/search2x.png);
+        background-size: 100%;
+        width: 82px;
+        height: 82px;
+    }
+
+    #map-search:active
+    {
+        background-image: url(../styles/images/search_active2x.png);
+        background-size: 100%;
+    }
+
+    #map-navigate-home
+    {
+        background-image: url(../styles/images/location2x.png);
+        background-size: 100%;
+        width: 80px;
+        height: 80px;
+    }
+
+    #map-navigate-home:active
+    {
+        background-image: url(../styles/images/location_active2x.png);
+        background-size: 100%;
+    }
+    
+	}
+
+
+    
+

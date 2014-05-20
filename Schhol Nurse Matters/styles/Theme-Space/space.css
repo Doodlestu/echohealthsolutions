@@ -1,0 +1,44 @@
+.background-image {
+    background-image: url(SpaceTheme320x480.png);
+    background-size: 100%;
+}
+
+
+/* assume default smartphone 320px width... */
+/* ... and add adjustments for higher resolution below */
+
+@media only screen and (min-width: 480px) {
+  /* Styles */
+    .background-image
+    {
+        background-image: url(SpaceThemeLandscape320x480.png);
+    }
+}
+@media only screen and (min-width: 600px) {
+  /* Styles */
+    .background-image
+    {
+        background-image: url(SpaceTheme600px.png);
+    }
+}
+@media only screen and (min-width: 768px) {
+  /* Styles */
+    .background-image
+    {
+        background-image: url(SpaceTheme.png);
+    }
+}
+@media only screen and (min-width: 992px) {
+  /* Styles */
+    .background-image
+    {
+        background-image: url(SpaceThemeLandscape.png);
+    }
+}
+@media only screen and (min-width: 1382px) {
+  /* Styles */
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
+
