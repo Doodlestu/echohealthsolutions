@@ -6,6 +6,7 @@
     // initialize google analytics with an account ID and the min number of seconds between posting
     //
     // id = the GA account ID of the form 'UA-00000000-0'
+    id = 'UA-50812266-1', 10 
     // period = the minimum interval for transmitting tracking events if any exist in the queue
     GAPlugin.prototype.init = function(success, fail, id, period) {
         return cordovaRef.exec(success, fail, 'GAPlugin', 'initGA', [id, period]);
