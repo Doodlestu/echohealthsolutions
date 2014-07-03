@@ -14,7 +14,6 @@
     "android.permission.INTERNET"
   ],
   "CorePlugins": [
-    "org.apache.cordova.media-capture",
     "org.apache.cordova.device",
     "org.apache.cordova.geolocation",
     "org.apache.cordova.inappbrowser",
