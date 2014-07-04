@@ -32,9 +32,31 @@ var app = {
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
+    
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         navigator.splashscreen.hide();
+        try {
+            analytics.startTrackerWithId('UA-50812266-1', function() {
+                alert('succ');
+            }, function() {
+                alert('fail');
+            });
+            analytics.trackEvent('Category', 'Action', 'Label', 1, function() {
+                alert('succ');
+            }, function() {
+                alert('fail');
+            })
+            analytics.trackView('Screen Title');
+            analytics.debugMode();
+            alert("pass");
+        }
+        catch (e) {
+            console.log("error:" + e);
+        }
+        /* gaPlugin = window.plugins.gaPlugin;
+		 gaPlugin.init(successHandler, errorHandler, "UA-50812266-1", 10);*/
+        
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

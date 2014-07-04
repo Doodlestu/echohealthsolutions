@@ -14,8 +14,10 @@
     "android.permission.INTERNET"
   ],
   "CorePlugins": [
+    "org.apache.cordova.media-capture",
     "org.apache.cordova.device",
     "org.apache.cordova.geolocation",
+    "org.apache.cordova.globalization",
     "org.apache.cordova.inappbrowser",
     "org.apache.cordova.network-information",
     "org.apache.cordova.statusbar"
@@ -31,7 +33,7 @@
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
   ],
-  "BundleVersion": "1.1",
+  "BundleVersion": "1.0",
   "DisplayName": "",
   "Author": "",
   "Description": "School Nurse Matters",
