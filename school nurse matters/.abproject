@@ -16,11 +16,13 @@
   "CorePlugins": [
     "org.apache.cordova.media-capture",
     "org.apache.cordova.device",
+    "org.apache.cordova.file",
     "org.apache.cordova.geolocation",
     "org.apache.cordova.globalization",
     "org.apache.cordova.inappbrowser",
     "org.apache.cordova.network-information",
-    "org.apache.cordova.statusbar"
+    "org.apache.cordova.statusbar",
+    "com.telerik.plugin.eqatecanalytics"
   ],
   "DeviceOrientations": [
     "Portrait",

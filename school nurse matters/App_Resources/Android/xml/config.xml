@@ -20,11 +20,12 @@
         <plugin name="App" value="org.apache.cordova.App"/>
         <plugin name="Geolocation" value="org.apache.cordova.GeoBroker"/>
         <plugin name="Device" value="org.apache.cordova.Device"/>
-        
+       
         
        
         <plugin name="File" value="org.apache.cordova.FileUtils"/>
         <plugin name="NetworkStatus" value="org.apache.cordova.NetworkManager"/>
+        <plugin name="Networkinfo" value="org.apache.cordova.network-information"/>
         
         <plugin name="Capture" value="org.apache.cordova.Capture"/>
         <plugin name="Battery" value="org.apache.cordova.BatteryListener"/>
