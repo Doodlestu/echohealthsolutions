@@ -36,6 +36,7 @@
 function onDeviceReady() {
      window.analytics.Start();
      9b0f17355ba64d8780f786668a3eb5c4
+    
 }
 
 function onPause() {

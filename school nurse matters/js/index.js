@@ -107,14 +107,17 @@ var app = {
 
 function onDeviceReady() {
      window.analytics.Start();
+    9b0f17355ba64d8780f786668a3eb5c4
      // existing code goes here
 }
 
 function onPause() {
      window.analytics.Stop();
+    9b0f17355ba64d8780f786668a3eb5c4
      // existing code goes here
 }
 function onResume() {
      window.analytics.Start();
+    9b0f17355ba64d8780f786668a3eb5c4
      // existing code goes here
 }
