@@ -35,7 +35,7 @@
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
   ],
-  "BundleVersion": "1.0",
+  "BundleVersion": "1.3",
   "DisplayName": "",
   "Author": "",
   "Description": "School Nurse Matters",
@@ -44,7 +44,7 @@
     "2"
   ],
   "iOSBackgroundMode": [],
-  "AndroidVersionCode": "5",
+  "AndroidVersionCode": "6",
   "WP8Requirements": [],
   "WP8Capabilities": [],
   "WP8TileTitle": "",
@@ -52,12 +52,8 @@
   "WP8PublisherID": "{f8c597e0-75e9-4340-8f9c-c168e53b323f}",
   "WP8Publisher": "",
   "Framework": "Cordova",
-  "CordovaPluginVariables": {
-    "com.telerik.Cordova-MobileTestingExtension": {
-      "IOS_APP_URL": ""
-    }
-  },
   "projectVersion": "1",
   "WP8WindowsPublisherName": "CN=Telerik",
-  "WP8PackageIdentityName": "1234Telerik.com.echohealthsolutions.snm"
+  "WP8PackageIdentityName": "1234Telerik.com.echohealthsolutions.snm",
+  "WPSdk": "8.0"
 }
