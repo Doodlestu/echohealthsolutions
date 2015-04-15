@@ -56,5 +56,8 @@
     "com.telerik.Cordova-MobileTestingExtension": {
       "IOS_APP_URL": ""
     }
-  }
+  },
+  "projectVersion": "1",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8PackageIdentityName": "1234Telerik.com.echohealthsolutions.snm"
 }
